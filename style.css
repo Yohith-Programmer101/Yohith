@@ -1,0 +1,80 @@
+::-webkit-scrollbar,
+::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+    border-radius: 100px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+    border: 3px solid transparent;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightgrey;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.active {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+.scrollmenu {
+    margin: 0px;
+    white-space: nowrap;
+    background-color: lightgrey;
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.scrollmenu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.scrollmenu a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.btn{
+    outline: none !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.container{
+    text-align: center;
+    align-items: center;
+}
+
