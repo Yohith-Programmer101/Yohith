@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /*
 
 Sitemap: https://yohith.netlify.app/sitemap.xml
