@@ -1,149 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yohith-Programmer101</title>
+    <meta
+      name="google-site-verification"
+      content="J6bgUW_A911YvTsLyKVdn3Eaq327ZmNQzRa9qCbDjVQ"
+    />
+    <meta name="description" content="About me !, Yohith-Programmer101" />
+    <meta name="og:title" content="Yohith-Programmer101" />
+    <meta name="og:url" content="https://yohith.netlify.app/" />
+    <meta name="og:image" content="https://yohith.netlify.app/favicon.ico" />
+    <meta name="og:image:height" content="100" />
+    <meta name="og:image:width" content="200" />
+    <meta name="og:description" content="About me !, Yohith-Programmer101" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://edgy.app/wp-content/uploads/2018/09/programming-day-FI.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background: white;
+      }
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Yohith-Programmer101</title>
-        <meta name="google-site-verification" content="J6bgUW_A911YvTsLyKVdn3Eaq327ZmNQzRa9qCbDjVQ" />
-        <meta name="description" content="About me !, Yohith-Programmer101">
-        <meta name="og:title" content="Yohith-Programmer101" />
-        <meta name="og:url" content="https://yohith.netlify.app/" />
-        <meta name="og:image" content="https://yohith.netlify.app/favicon.ico" />
-        <meta name="og:image:height" content="100">
-        <meta name="og:image:width" content="200">
-        <meta name="og:description" content="About me !, Yohith-Programmer101">
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="https://edgy.app/wp-content/uploads/2018/09/programming-day-FI.jpg"
-            type="image/x-icon">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <style>
-            body {
-                background: white;
-            }
+      a {
+        color: black;
+      }
 
-            a {
-                color: black;
-            }
+      a:hover {
+        color: black;
+        text-decoration: none;
+      }
 
-            a:hover {
-                color: black;
-                text-decoration: none;
-            }
+      li > a {
+        color: #007bff;
+      }
 
-            li>a {
-                color: #007bff;
-            }
+      li > a:hover {
+        color: #17a2b8;
+      }
 
-            li>a:hover {
-                color: #17a2b8;
-            }
-        </style>
-    </head>
+      #container {
+        display: flex;
+        padding: 10px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+      }
 
-    <body>
-        <div style="position: fixed; width: 100%;" id="navbar">
-            <div class="scrollmenu">
-                <a href="/" class="active">Home</a>
-                <a href="about">About</a>
-                <button class="btn" id="theme" onclick="changeTheme()" title="Change Theme"
-                    style="padding-left: 10px; position: absolute; right: 0px; top: 5px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                        class="bi bi-circle-half" viewBox="0 0 16 16">
-                        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+      .color-box {
+        border-radius: 5px;
+        overflow: hidden;
+        -webkit-box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+          0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+        box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+          0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+        margin: 0.5rem 0 1rem 0;
+      }
+
+      .color-box:hover {
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+          0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+          0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+          0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+      }
+      svg:hover {
+        color: grey;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="position: relative; width: 100%" id="navbar">
+      <div class="scrollmenu">
+        <a href="/" class="active">Home</a>
+        <a href="about">About</a>
+        <button
+          class="btn"
+          id="theme"
+          onclick="changeTheme()"
+          title="Change Theme"
+          style="padding-left: 10px; position: absolute; right: 0px; top: 5px"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-circle-half"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="container" style="margin-top: 10px">
+      <img
+        src="./author.jpg"
+        alt="author"
+        style="width: 100px; height: 100px; border-radius: 50%"
+      /><br />
+      <h1>Hi, I am Yohith</h1>
+      <p style="color: grey">Computer Scientist | Developer</p>
+      <a href="https://github.com/Yohith-Programmer101" target="_blank">
+        <svg
+          style="margin: 10px"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          fill="currentColor"
+          class="bi bi-github"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+          />
+        </svg>
+      </a>
+      <a href="mailto:yohithprogrammer101@gmail.com" target="_blank">
+        <svg
+          style="margin: 10px"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+          ></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </a>
+      <a href="https://stackoverflow.com/users/14749463/yohith" target="_blank">
+        <svg
+          aria-hidden="true"
+          class="svg-icon iconLogoGlyphSm"
+          width="30"
+          height="30"
+          viewBox="0 0 19 22"
+        >
+          <path d="M16 20v-6h2v8H0v-8h2v6h14z" fill="#C1BEBC"></path>
+          <path
+            d="M12.72 0l-1.57 1.17L17 9.05l1.57-1.18L12.72 0zM4 18h10v-2H4v2zm11.4-7.08L7.86 4.64l1.25-1.5 7.54 6.28-1.25 1.5zm-10-1.91l8.9 4.14.82-1.78-8.9-4.14L5.4 9zm8.63 6.27l-9.9-1.67.4-1.92 9.63 1.92-.13 1.67z"
+            fill="#F48024"
+          ></path>
+        </svg>
+      </a>
+      <a
+        href="https://www.reddit.com/user/Yohith-Programmer101"
+        target="_blank"
+      >
+        <svg
+          style="margin: 10px"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          stroke="none"
+        >
+          <path
+            d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/yohith_programmer101/" target="_blank">
+        <svg
+          style="margin: 10px"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://discord.gg/E6GAATvWgp" target="_blank">
+        <img
+          style="width: 40px; height: 30px"
+          src="https://www.jing.fm/clipimg/full/243-2438094_discord-svg-chat-transparent-background-discord-logo-transparent.png"
+        />
+      </a>
+    </div>
+    <hr />
+    <div style="text-align: center">
+      <h2 style="margin-top: 5px">Projects</h2>
+      <div
+        style="
+          width: 100px;
+          height: 5px;
+          background-color: #0000001a;
+          margin: auto;
+        "
+      ></div>
+      <br />
+      <div id="container"></div>
+    </div>
+
+    <script>
+      data = [
+        {
+          name: 'Communication-Bot',
+          link: 'http://communication-bot.epizy.com',
+          img:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf1ib_MgNXx83JOhBpywGtcQjjJMy_kG8gPA&usqp=CAU',
+          github: 'https://github.com/Yohith-Programmer101/Communication-Bot',
+        },
+        {
+          name: 'Avax Bot',
+          link: 'http://avax-bot.rf.gd',
+          img:
+            'https://cdn.discordapp.com/attachments/781847301241044992/805694352935485440/download_12.jpeg',
+          github: 'https://github.com/Yohith-Programmer101/Avax-Bot',
+        },
+        {
+          name: 'Prime Zone',
+          link: 'http://primezone.epizy.com',
+          img:
+            'https://media.discordapp.net/attachments/784269892437671937/790974445899481088/Screenshot_2020-12-22_203232.png',
+          github: 'https://github.com/Yohith-Programmer101/Prime-Zone',
+        },
+        {
+          name: 'Coder101',
+          link: 'https://coder101.herokuapp.com',
+          img:
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1P1v3C3V6ebY_9tKYMWdK9WXXdbDvbqErwg&usqp=CAU',
+          github: 'https://github.com/Yohith-Programmer101/Coder101',
+        },
+        {
+          name: 'Portfolio Site',
+          link: 'https://yohith.netlify.app',
+          img:
+            'data:image/jpeg;base64,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',
+          github: 'https://github.com/Yohith-Programmer101/Yohith',
+        },
+        {
+          name: 'Downloader101',
+          link: 'https://downloader101.netlify.app',
+          img:
+            'data:image/png;base64,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',
+          github:
+            'https://github.com/Yohith-Programmer101/Downloader101-Frontend',
+        },
+        {
+          name: 'Programming Booklets',
+          link: 'https://github.com/Yohith-Programmer101/Programming-Booklets',
+          img:
+            'data:image/png;base64,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',
+          github:
+            'https://github.com/Yohith-Programmer101/Programming-Booklets',
+        },
+        {
+          name: 'Python Projects',
+          link: 'https://github.com/Yohith-Programmer101/Python',
+          img:
+            'data:image/jpeg;base64,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',
+          github: 'https://github.com/Yohith-Programmer101/Python',
+        },
+        {
+          name: 'Arduino',
+          link: 'https://github.com/Yohith-Programmer101/Arduino',
+          img:
+            'data:image/png;base64,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',
+          github: 'https://github.com/Yohith-Programmer101/Arduino',
+        },
+      ]
+
+      addProjects()
+
+      function addProjects() {
+        var container = document.getElementById('container')
+        data.forEach((i) => {
+          container.innerHTML += `<div class="card color-box" style="width: 300px; height: 350px">
+            <img
+                src=${i.img}
+                class="card-img-top"
+                alt="..."
+                style="width: 100%; height: 250px; cursor: pointer;"
+                onclick=window.open("${i.link}")
+            />
+            <div class="card-body">
+                <h4 class="card-text" style="margin-bottom: 0px">
+                ${i.name}
+                </h4>
+                <div style="display: flex; justify-content: space-around">
+                <a href=${i.link} target="_blank" title="Open Project">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 30 30"
+                    width="30"
+                    height="30"
+                    style="margin-top: 5px"
+                    >
+                    <path
+                        d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"
+                    />
                     </svg>
-                </button>
+                </a>
+                <a href=${i.github} target="_blank" title="View Codes">
+                    <svg
+                    style="margin: 10px"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="25"
+                    height="25"
+                    fill="currentColor"
+                    class="bi bi-github"
+                    viewBox="0 0 16 16"
+                    >
+                    <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                    />
+                    </svg>
+                </a>
+                </div>
             </div>
-        </div>
-        <br><br><br>
-        <div class="container" style="margin-top: 50px;">
-            <h1>Hi, I am Yohith</h1><br>
-            <p style="color: grey;">Computer Scientist | Developer</p>
-            <a href="https://github.com/Yohith-Programmer101" target="_blank">
-                <svg style="margin: 10px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                    class="bi bi-github" viewBox="0 0 16 16">
-                    <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                </svg>
-            </a>
-            <a href="mailto:yohithprogrammer101@gmail.com" target="_blank">
-                <svg style="margin: 10px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                    <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
-            </a>
-            <a href="https://stackoverflow.com/users/14749463/yohith" target="_blank">
-                <svg aria-hidden="true" class="svg-icon iconLogoGlyphSm" width="30" height="30" viewBox="0 0 19 22">
-                    <path d="M16 20v-6h2v8H0v-8h2v6h14z" fill="#C1BEBC"></path>
-                    <path
-                        d="M12.72 0l-1.57 1.17L17 9.05l1.57-1.18L12.72 0zM4 18h10v-2H4v2zm11.4-7.08L7.86 4.64l1.25-1.5 7.54 6.28-1.25 1.5zm-10-1.91l8.9 4.14.82-1.78-8.9-4.14L5.4 9zm8.63 6.27l-9.9-1.67.4-1.92 9.63 1.92-.13 1.67z"
-                        fill="#F48024"></path>
-                </svg>
-            </a>
-            <a href="https://www.reddit.com/user/Yohith-Programmer101" target="_blank">
-                <svg style="margin: 10px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
-                    fill="currentColor" stroke="none">
-                    <path
-                        d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z">
-                    </path>
-                </svg>
-            </a>
-            <a href="https://www.instagram.com/yohith_programmer101/" target="_blank">
-                <svg style="margin: 10px;" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"
-                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-                </svg>
-            </a>
-            <a href="https://discord.gg/E6GAATvWgp" target="_blank">
-                <img style="width: 40px; height: 30px;"
-                    src="https://www.jing.fm/clipimg/full/243-2438094_discord-svg-chat-transparent-background-discord-logo-transparent.png">
-            </a>
-        </div>
-        <hr>
-        <h3 style="margin: 5px;"><u>Made By Me:</u></h3>
-        <ol>
-            <li>Communication Bot - <a href="http://communication-bot.epizy.com">http://communication-bot.epizy.com</a>
-            </li>
-            <li>Avax Bot - <a href="http://avax-bot.rf.gd">http://avax-bot.rf.gd</a></li>
-            <li>Prime Zone - <a href="http://primezone.epizy.com">http://primezone.epizy.com</a></li>
-            <li>Coder101 - <a href="https://coder101.herokuapp.com">https://coder101.herokuapp.com</a></li>
-            <li>Yohith-Programmer101 - <a href="https://yohith.netlify.app">https://yohith.netlify.app</a></li>
-            <li>Downloader101 - <a href="https://downloader101.netlify.app">https://downloader101.netlify.app</a>
-            </li>
-        </ol>
+            </div>`
+        })
+      }
 
-        <script>
-            function changeTheme() {
-                if (document.body.style.background === "") {
-                    document.body.style.background = "grey";
-                    document.body.style.color = "lightgrey";
-                    $("svg").css("color", "lightgrey");
-                    $("li>a").css("color", "lightblue");
-                    $(".scrollmenu>a").css("color", "lightgrey");
-                    $(".active").css("border-bottom", "2px solid lightgrey")
-                    $("p").css("color", "lightgrey");
-                }
-                else {
-                    document.body.style.background = "";
-                    document.body.style.color = "";
-                    $("svg").css("color", "");
-                    $("li>a").css("color", "#007bff");
-                    $(".scrollmenu>a").css("color", "black");
-                    $(".active").css("border-bottom", "2px solid black");
-                    $("p").css("color", "grey");
-                }
-            }
-        </script>
-
-    </body>
-
+      function changeTheme() {
+        if (document.body.style.background === '') {
+          document.body.style.background = 'grey'
+          document.body.style.color = 'lightgrey'
+          $('svg').css('color', 'lightgrey')
+          $('li>a').css('color', 'lightblue')
+          $('.scrollmenu>a').css('color', 'lightgrey')
+          $('.active').css('border-bottom', '2px solid lightgrey')
+          $('p').css('color', 'lightgrey')
+          $('.color-box').css('background', '#0000001a')
+        } else {
+          document.body.style.background = ''
+          document.body.style.color = ''
+          $('svg').css('color', '')
+          $('li>a').css('color', '#007bff')
+          $('.scrollmenu>a').css('color', 'black')
+          $('.active').css('border-bottom', '2px solid black')
+          $('p').css('color', 'grey')
+          $('.color-box').css('background', 'white')
+        }
+      }
+    </script>
+  </body>
 </html>
